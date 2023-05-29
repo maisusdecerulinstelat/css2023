@@ -1,0 +1,51 @@
+/* Aplicatia 2 */
+#elementToAnimate {
+        position: relative;
+        /* animation: your animation 5s linear 0s infinite normal none; */
+        animation-name: yourAnimation;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+      -ms-zoom-animation: none;
+}
+@keyframes yourAnimation {
+        0% {
+                transform: translate(0,0) rotate(0deg) scale(1);
+        }
+        20% {
+                transform: translate(50,0) rotate(0deg) scale(1);
+                color: blue;
+        }
+        25% {
+                transform: translate(50, 50) rotate(0deg) scale(1);
+        }
+        40% {
+                transform: translate(150, 50) rotate(0deg) scale(1);
+        }
+        45% {
+                transform: translate(150, 0) rotate(0deg) scale(1);
+        }
+        60% {
+                transform: translate(350, 50) rotate(0deg) scale(1);
+        }
+        85% {
+                transform: translate(550,0) rotate(0deg) scale(1);
+        }
+        95% {
+                transform: translate(650, 0) rotate(0deg) scale(1);
+        }
+        100% {
+                transform: translate(900,0) rotate(0deg) scale(1);
+        }
+}
+
+#demogame {
+     /* background-image: url(https://imageio.forbes.com/blogs-images/startswithabang/files/2020/04/opo9601c-1200x947.jpeg); ; */
+     width: 100%;
+     max-width: 1600px;
+     height: 100vh;
+     margin: auto;
+     background-size: cover;  
+}

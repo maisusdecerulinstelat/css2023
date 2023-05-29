@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie de imagini</title>
+  <style>
+        .row {
+width: 90%;
+max-width: 960px;
+margin: 0 auto;
+}
+
+.row::after {
+content: "";
+display: block;
+clear: left;
+}
+
+.column {
+float: left;
+width: 16.66%;
+box-sizing: border-box;
+padding: 8px;
+}
+
+.box {
+height: 144px;
+background-color: #914E67;
+}
+
+    /* Stilizare globală */
+    /* body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    /* Stilizare pentru ecranul desktop */
+    /* .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .gallery-item {
+      width: calc(25% - 20px);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .thumb {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      background-color: blue;
+      overflow: hidden;
+    }
+
+    .thumb img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .thumb-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .thumb-overlay:hover {
+      opacity: 1;
+    }
+
+    .thumb-overlay p {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+      padding: 10px;
+    }  */
+
+    /* Stilizare pentru tablete */
+    @media (max-width: 1024px) {
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 10px;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    /* Stilizare pentru telefoane */
+    @media (max-width: 480px) {
+      .gallery-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Galerie de imagini</h1>
+  <div class="gallery">
+    <div class="gallery-item">
+      <div class="thumb">
+        <img src="./img/placeholder-image.png" alt="Imagine 1">
+        <div class="thumb-overlay">
+          <p>Imagine 1</p>
+        </div>
+      </div>
+    </div>
+    <!-- Adăugați aici mai multe elemente de galerie -->
+  </div>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, officiis id. Maxime laborum rerum repellat. Modi quo provident, dignissimos in repellendus unde mollitia! Dolorum temporibus autem vel dolore ipsa quibusdam.</p>
+</body>
+</html>

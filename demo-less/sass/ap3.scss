@@ -1,0 +1,30 @@
+
+//  == Variables ==
+
+$bg-color: #ccc;
+
+body {
+        background-color: $bg-color;
+}
+
+// == Nesting ==
+
+div.mod {
+        background: red;
+
+
+/*  ul nested inside nav */
+section {
+        margin: 0;
+        padding: 0;
+}
+
+/*  ul nested inside section */
+ul {
+        list-style: none;
+        float: left;
+        margin: 0;
+        padding: 0;
+}
+}
+
